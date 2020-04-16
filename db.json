@@ -1,0 +1,67 @@
+{
+  "puppies": [
+    {
+      "id": 0,
+      "name": "Wiley",
+      "ageInMonths": 3,
+      "breed": "Poodle",
+      "personality": "Skeptical 🤨",
+      "imageUrl": "assets/images/wiley.jpg",
+      "available": true
+    },
+    {
+      "id": 1,
+      "name": "Betsy",
+      "ageInMonths": 6,
+      "breed": "Beagle",
+      "personality": "Confused 🙃",
+      "imageUrl": "assets/images/betsy.jpg",
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Prince Gerald",
+      "ageInMonths": 7,
+      "breed": "Golden Retriever",
+      "personality": "Lazy 😴",
+      "imageUrl": "assets/images/princeGerald.jpg",
+      "available": true
+    },
+    {
+      "id": 3,
+      "name": "Harriet",
+      "ageInMonths": 6,
+      "breed": "Portugese Water Dog",
+      "personality": "Amazed 😳",
+      "imageUrl": "assets/images/harriet.jpg",
+      "available": true
+    },
+    {
+      "id": 4,
+      "name": "Neikko",
+      "ageInMonths": 6,
+      "breed": "Mostly Rat",
+      "personality": "Dizzy 🤪",
+      "imageUrl": "assets/images/neikko.jpg",
+      "available": true
+    },
+    {
+      "id": 5,
+      "name": "Patches",
+      "ageInMonths": 11,
+      "breed": "Bulldog",
+      "personality": "Affectionate 🥰",
+      "imageUrl": "assets/images/patches.jpg",
+      "available": true
+    },
+    {
+      "id": 6,
+      "name": "Sandra",
+      "ageInMonths": 6,
+      "breed": "Cockerspaniel",
+      "personality": "Shady 😒",
+      "imageUrl": "assets/images/sandra.jpg",
+      "available": false
+    }
+  ]
+}

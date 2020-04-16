@@ -1,0 +1,18 @@
+.puppy-image {
+  border: thin solid black;
+  width: 80%;
+  margin: 5% ;
+}
+
+.puppy-card {
+  display: inline-block;
+  width: 20%;
+  border: thin solid black;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.puppy-details {
+  margin: 5%;
+}
+
