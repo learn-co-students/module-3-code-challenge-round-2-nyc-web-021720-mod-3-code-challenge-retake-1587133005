@@ -34,18 +34,29 @@ function renderPuppies(puppy){
 
 puppyForm.addEventListener('submit', function(event){
     event.preventDefault()
-    addDog()
+    addDog(event.target)
     puppyForm.reset()
 })
 
 function addDog(dog_data){
-    let newDog = {
-        "name": dog_data.name.value,
-        "Age In Months": dog_data.ageInMonths.value,
-        "Breed": dog_data.breed.value,
-        "Personality": dog_data.personality.value,
-        "Image Address": dog_data.imageUrl.value
-    }
-
-    fetch
+    
+    fetch(puppyUrl, {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json',
+            'accept': 'application/json'
+        },
+        body: JSON.stringify({
+            "name": puppyForm.elements["name"].value,
+            "Age In Months": puppyForm.elements["ageInMonths"].value,
+            "Breed": puppyForm.elements["breed"].value,
+            "Personality": puppyForm.elements["personality"].value,
+            "Image Address": puppyForm.elements["imageUrl"].value
+        })
+    })
+    .then(resp => resp.json())
+    .then((dog_obj) => {
+        let createdDog = renderPuppies(dog_obj)
+        puppyContainer.append(createdDog)
+    })
 }
