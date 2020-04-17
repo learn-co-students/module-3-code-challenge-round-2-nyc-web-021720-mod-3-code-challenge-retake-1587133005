@@ -105,6 +105,38 @@
       "Personality": "Strong",
       "Image Address": "https://i.ytimg.com/vi/RR6WN9NJI50/hqdefault.jpg",
       "id": 12
+    },
+    {
+      "name": "Akamaru",
+      "Age In Months": "2",
+      "Breed": "Shinobi",
+      "Personality": "Devoted",
+      "Image Address": "https://i.ytimg.com/vi/RR6WN9NJI50/hqdefault.jpg",
+      "id": 13
+    },
+    {
+      "name": "Akamaru",
+      "ageInMonths": "100",
+      "breed": "Hokage",
+      "personality": "Devoted",
+      "imageUrl": "https://i.ytimg.com/vi/RR6WN9NJI50/hqdefault.jpg",
+      "id": 14
+    },
+    {
+      "name": "Akamaru",
+      "ageInMonths": "8",
+      "breed": "Hokage",
+      "personality": "Loyal",
+      "imageUrl": "https://i.ytimg.com/vi/RR6WN9NJI50/hqdefault.jpg",
+      "id": 15
+    },
+    {
+      "name": "Akamaru",
+      "ageInMonths": "5",
+      "breed": "Cutie",
+      "imageUrl": "https://i.ytimg.com/vi/RR6WN9NJI50/hqdefault.jpg",
+      "personality": "Strong",
+      "id": 16
     }
   ]
 }

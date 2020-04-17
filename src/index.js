@@ -15,22 +15,7 @@ getPuppy()
     })
 })
 
-function renderPuppies(puppy){
-    let puppyCard = document.createElement('div')
-    puppyCard.className = 'puppy-card'
 
-    puppyCard.innerHTML = `
-        <img class="puppy-image" src="${puppy.imageUrl}" alt="Picture did not render" class="thumbnail">
-        <div class="puppy-details">
-            <h3>${puppy.name}</h3>
-            <p class="age">Age: ${puppy.age} months</p>
-            <p class="breed">Breed: ${puppy.breed}</p>
-            <p class="personality">Personality: ${puppy.personality}</p>
-        </div>`
-
-        puppyContainer.append(puppyCard)
-
-}
 
 puppyForm.addEventListener('submit', function(event){
     event.preventDefault()
@@ -47,11 +32,11 @@ function addDog(dog_data){
             'accept': 'application/json'
         },
         body: JSON.stringify({
-            "name": puppyForm.elements["name"].value,
-            "Age In Months": puppyForm.elements["ageInMonths"].value,
-            "Breed": puppyForm.elements["breed"].value,
-            "Personality": puppyForm.elements["personality"].value,
-            "Image Address": puppyForm.elements["imageUrl"].value
+            "name": puppyForm.name.value,
+            "ageInMonths": puppyForm.ageInMonths.value,
+            "breed": puppyForm.breed.value,
+            "imageUrl": puppyForm.imageUrl.value,
+            "personality": puppyForm.personality.value
         })
     })
     .then(resp => resp.json())
@@ -59,4 +44,21 @@ function addDog(dog_data){
         let createdDog = renderPuppies(dog_obj)
         puppyContainer.append(createdDog)
     })
+}
+
+function renderPuppies(puppy){
+    let puppyCard = document.createElement('div')
+    puppyCard.className = 'puppy-card'
+
+    puppyCard.innerHTML = `
+        <img class="puppy-image" src="${puppy.imageUrl}" alt="Picture did not render" class="thumbnail">
+        <div class="puppy-details">
+            <h3>${puppy.name}</h3>
+            <p class="age">Age: ${puppy.age} months</p>
+            <p class="breed">Breed: ${puppy.breed}</p>
+            <p class="personality">Personality: ${puppy.personality}</p>
+        </div>`
+
+        puppyContainer.append(puppyCard)
+
 }
